@@ -4,7 +4,7 @@
   "description": "一个 git commit tool",
   "scripts": {
     "start": "sh gitMessage.sh",
-    "commit": "git add . && ./node_modules/commitizen/bin/git-cz"
+    "commit": "git commit -a -m ' '"
   },
   "repository": {
     "type": "git",
