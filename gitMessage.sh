@@ -22,7 +22,7 @@ fi
 sudo echo  "node_modules/"  >> .gitignore
 sudo npm i -D commitizen 
 sudo npm i -D cz-customizable
-sudo npm i -D cz-conventional-changelog
+# sudo npm i -D cz-conventional-changelog
 # sudo npm i -D @commitlint/config-conventional @commitlint/cli
 # sudo npm i -D commitlint-config-cz @commitlint/cli
 sudo npm i -D husky@next

@@ -15,11 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-conventional": "^8.2.0",
     "commitizen": "^4.0.3",
-    "commitlint-config-cz": "^0.12.1",
-    "cz-conventional-changelog": "^3.0.2",
     "cz-customizable": "^6.2.0",
     "husky": "^4.0.0-beta.1"
   },
