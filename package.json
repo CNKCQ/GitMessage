@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "一个 git commit tool",
   "scripts": {
-    "commit": "./node_modules/commitizen/bin/git-cz"
+    "start": "sh gitMessage.sh",
+    "commit": "git add . && ./node_modules/commitizen/bin/git-cz"
   },
   "repository": {
     "type": "git",
