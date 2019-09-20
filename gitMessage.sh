@@ -2,7 +2,7 @@
 
 if [ -f "package.json" ]
 then
-    echo "package.json exist "
+    echo "package.json exist ！"
 else 
     curl -fsSL https://raw.githubusercontent.com/CNKCQ/GitMessage/master/package.json > ./package.json
 fi
@@ -22,9 +22,6 @@ fi
 sudo echo  "node_modules/"  >> .gitignore
 sudo npm i -D commitizen 
 sudo npm i -D cz-customizable
-# sudo npm i -D cz-conventional-changelog
-# sudo npm i -D @commitlint/config-conventional @commitlint/cli
-# sudo npm i -D commitlint-config-cz @commitlint/cli
 sudo npm i -D husky@next
 
 if [ ! -f "questions.js" ]
