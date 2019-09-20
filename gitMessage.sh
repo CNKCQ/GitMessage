@@ -7,7 +7,7 @@ else
     curl -fsSL https://raw.githubusercontent.com/CNKCQ/GitCommit/master/package.json > ./package.json
     echo "package.json does not exist"
 fi
-if [ ! -f ".commitlintrc" ]
+if [ ! -f ".commitlintrc.js" ]
 then
     curl -fsSL https://raw.githubusercontent.com/CNKCQ/GitCommit/master/.commitlintrc.js > ./.commitlintrc.js
 fi
