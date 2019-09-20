@@ -30,4 +30,5 @@ if [ ! -f "questions.js" ]
 then
     curl -fsSL https://raw.githubusercontent.com/CNKCQ/GitMessage/master/questions.js > ./questions.js
 fi
+
 /bin/cp -rf ./questions.js ./node_modules/cz-customizable/questions.js
