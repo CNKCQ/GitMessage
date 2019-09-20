@@ -6,10 +6,10 @@ then
 else 
     curl -fsSL https://raw.githubusercontent.com/CNKCQ/GitMessage/master/package.json > ./package.json
 fi
-if [ ! -f ".commitlintrc.js" ]
-then
-    curl -fsSL https://raw.githubusercontent.com/CNKCQ/GitMessage/master/.commitlintrc.js > ./.commitlintrc.js
-fi
+# if [ ! -f ".commitlintrc.js" ]
+# then
+#     curl -fsSL https://raw.githubusercontent.com/CNKCQ/GitMessage/master/.commitlintrc.js > ./.commitlintrc.js
+# fi
 if [ ! -f ".cz-config.js" ]
 then
     curl -fsSL https://raw.githubusercontent.com/CNKCQ/GitMessage/master/.cz-config.js > ./.cz-config.js 
@@ -19,7 +19,11 @@ then
     curl -fsSL https://raw.githubusercontent.com/CNKCQ/GitMessage/master/.huskyrc > ./.huskyrc
 fi
 
-sudo echo  "node_modules/"  >> .gitignore
+if [ ! grep -qF "node_modules" .gitignore ]
+then
+   sudo echo  "node_modules/"  >> .gitignore
+fi
+
 sudo npm i -D commitizen 
 sudo npm i -D cz-customizable
 sudo npm i -D husky@next

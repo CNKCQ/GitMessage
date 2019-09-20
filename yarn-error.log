@@ -1,0 +1,51 @@
+Arguments: 
+  /Users/steve/.nvm/versions/node/v10.16.0/bin/node /Users/steve/.nvm/versions/node/v10.16.0/bin/yarn install
+
+PATH: 
+  /Users/steve/.nvm/versions/node/v10.16.0/bin:/usr/local/bin:/Users/steve/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:~/Library/Android/sdk/tools:~/Library/Android/sdk/tools/bin:~/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/Users/steve/develop/GitMessage/node_modules/define-property/node_modules/kind-of'
+
+npm manifest: 
+  {
+    "name": "gitci",
+    "version": "1.0.0",
+    "description": "一个 git commit tool",
+    "scripts": {
+      "start": "sh gitMessage.sh",
+      "commit": "git commit -a -m ' '"
+    },
+    "repository": {
+      "type": "git",
+      "url": "null"
+    },
+    "config": {
+      "commitizen": {
+        "path": "node_modules/cz-customizable"
+      }
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "commitizen": "^4.0.3",
+      "cz-customizable": "^6.2.0",
+      "husky": "^4.0.0-beta.1"
+    },
+    "dependencies": {}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
