@@ -2,7 +2,7 @@
 
 if [ -f "package.json" ]
 then
-    echo "package.json exist ！"
+    echo "package.json exist "
 else 
     curl -fsSL https://raw.githubusercontent.com/CNKCQ/GitMessage/master/package.json > ./package.json
 fi
