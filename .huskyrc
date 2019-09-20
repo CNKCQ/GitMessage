@@ -1,5 +1,5 @@
 {
   "hooks": {
-    
+    "prepare-commit-msg": "./node_modules/commitizen/bin/git-cz"
   }
 }
