@@ -5,11 +5,11 @@ module.exports = {
       { value: '✨ feat', name: '✨ feat:     A new feature' },
       { value: '🐞 fix', name: '🐞 fix:      A bug fix' },
       {
-        value: '🎉 perf',
-        name: '🎉 perf:     A code change that improves performance',
+        value: '🚀 perf',
+        name: '🚀 perf:     A code change that improves performance',
       },
       { value: '🧪  test', name: '🧪  test:     Adding missing tests' },
-      { value: '🔙 revert', name: '🔙 revert:   Revert to a commit' },
+      { value: '🗑 revert', name: '🗑 revert:   Revert to a commit' },
       { value: '📚 docs', name: '📚 docs:     Documentation only changes' },
     ],
   
